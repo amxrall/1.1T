@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Bow.cpp" />
+    <ClCompile Include="CRC.cpp" />
+    <ClCompile Include="CustomBow.cpp" />
+    <ClCompile Include="CustomItem.cpp" />
+    <ClCompile Include="CustomJewel.cpp" />
+    <ClCompile Include="CustomWing.cpp" />
+    <ClCompile Include="DrawUserInfo.cpp" />
+    <ClCompile Include="Effects.cpp" />
+    <ClCompile Include="Encode.cpp" />
+    <ClCompile Include="Features99z.cpp" />
+    <ClCompile Include="GlowManager.cpp" />
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="Interface2.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="DllMain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="HPBar.cpp" />
+    <ClCompile Include="ItemDescription.cpp" />
+    <ClCompile Include="ItemManager.cpp" />
+    <ClCompile Include="ItemSetOption.cpp" />
+    <ClCompile Include="ItemView.cpp" />
+    <ClCompile Include="MakePreviewCharSet.cpp" />
+    <ClCompile Include="MathLib.cpp" />
+    <ClCompile Include="MiniMap.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Models.cpp" />
+    <ClCompile Include="PetsManager.cpp" />
+    <ClCompile Include="PlayerSystem.cpp" />
+    <ClCompile Include="Protect.cpp" />
+    <ClCompile Include="RightClick.cpp" />
+    <ClCompile Include="SelectChar.cpp" />
+    <ClCompile Include="Smoke.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Principal.cpp" />
+    <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="Janela.cpp" />
+    <ClCompile Include="Protocol.cpp" />
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="TrayMode.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="Visual.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WingManager.cpp" />
+    <ClCompile Include="Wings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\New%27s\GBTeam Emulador\Files Seasson 1\Seasson 1 GBTeam\Soucer\GBTeam - Main_EX001\Main\resource.h" />
+    <ClInclude Include="Bow.h" />
+    <ClInclude Include="CRC.h" />
+    <ClInclude Include="CustomBow.h" />
+    <ClInclude Include="CustomItem.h" />
+    <ClInclude Include="CustomJewel.h" />
+    <ClInclude Include="CustomWing.h" />
+    <ClInclude Include="DrawUserInfo.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="Encode.h" />
+    <ClInclude Include="Features99z.h" />
+    <ClInclude Include="GlowManager.h" />
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="Interface2.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="detours.h" />
+    <ClInclude Include="Functions.h" />
+    <ClInclude Include="HPBar.h" />
+    <ClInclude Include="ItemDescription.h" />
+    <ClInclude Include="ItemManager.h" />
+    <ClInclude Include="ItemSetOption.h" />
+    <ClInclude Include="ItemView.h" />
+    <ClInclude Include="MakePreviewCharSet.h" />
+    <ClInclude Include="MathLib.h" />
+    <ClInclude Include="MiniMap.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Models.h" />
+    <ClInclude Include="PetsManager.h" />
+    <ClInclude Include="PlayerSystem.h" />
+    <ClInclude Include="Protect.h" />
+    <ClInclude Include="ReadScript.h" />
+    <ClInclude Include="RightClick.h" />
+    <ClInclude Include="SelectChar.h" />
+    <ClInclude Include="Smoke.h" />
+    <ClInclude Include="Structs.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Packets.h" />
+    <ClInclude Include="Principal.h" />
+    <ClInclude Include="Janela.h" />
+    <ClInclude Include="Offsets.h" />
+    <ClInclude Include="Protocol.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Title.h" />
+    <ClInclude Include="Tokenizer.h" />
+    <ClInclude Include="TrayMode.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="Visual.h" />
+    <ClInclude Include="Window.h" />
+    <ClInclude Include="WingManager.h" />
+    <ClInclude Include="Wings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\New%27s\GBTeam Emulador\Files Seasson 1\Seasson 1 GBTeam\Soucer\GBTeam - Main_EX001\Main\Client.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Main.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{31F5D791-D9B7-4B4D-A903-127322F1B101}</ProjectGuid>
+    <RootNamespace>Fog</RootNamespace>
+    <ProjectName>Main</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

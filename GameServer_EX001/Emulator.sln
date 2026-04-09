@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameServer", "GameServer\GameServer.vcxproj", "{21B89901-574C-4C82-9496-FE245D7BDEDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		DebugCS|x86 = DebugCS|x86
+		Release|x86 = Release|x86
+		ReleaseCS|x86 = ReleaseCS|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21B89901-574C-4C82-9496-FE245D7BDEDA}.Debug|x86.ActiveCfg = Debug|Win32
+		{21B89901-574C-4C82-9496-FE245D7BDEDA}.Debug|x86.Build.0 = Debug|Win32
+		{21B89901-574C-4C82-9496-FE245D7BDEDA}.DebugCS|x86.ActiveCfg = DebugCS|Win32
+		{21B89901-574C-4C82-9496-FE245D7BDEDA}.DebugCS|x86.Build.0 = DebugCS|Win32
+		{21B89901-574C-4C82-9496-FE245D7BDEDA}.Release|x86.ActiveCfg = Release|Win32
+		{21B89901-574C-4C82-9496-FE245D7BDEDA}.Release|x86.Build.0 = Release|Win32
+		{21B89901-574C-4C82-9496-FE245D7BDEDA}.ReleaseCS|x86.ActiveCfg = ReleaseCS|Win32
+		{21B89901-574C-4C82-9496-FE245D7BDEDA}.ReleaseCS|x86.Build.0 = ReleaseCS|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD047DD3-71A3-48D8-AD38-CFF7F05DAA0B}
+	EndGlobalSection
+EndGlobal

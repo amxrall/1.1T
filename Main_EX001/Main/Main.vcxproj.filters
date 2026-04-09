@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="[S1] GBTeam :: Customs">
+      <UniqueIdentifier>{ef76b9e1-82a4-405c-b630-c9ce46e29463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Janela">
+      <UniqueIdentifier>{5377adbe-0d91-4bb4-8d6b-668c3eff81c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Visual">
+      <UniqueIdentifier>{bd69f275-ba7d-4d6f-a0bd-ff1f2af8805b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Protocol">
+      <UniqueIdentifier>{40d0483c-8e16-4644-a2cd-b2cbc202cc92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Title">
+      <UniqueIdentifier>{a357f2bf-2b9a-4f6f-8bf0-bc13c30164dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Camera">
+      <UniqueIdentifier>{6e6ca24e-8ab6-497a-98a1-91169e399ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\HPBar">
+      <UniqueIdentifier>{c4a5d59b-7f15-4bcd-85a5-88eefdb86a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Smoke">
+      <UniqueIdentifier>{dbdd27e5-39e6-421c-863b-9b66a334573e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main">
+      <UniqueIdentifier>{b6318f8f-e80e-4f32-a852-969ecce59867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Principal">
+      <UniqueIdentifier>{da7a901b-4c23-4375-bf6d-1dadfcb72c39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Packets">
+      <UniqueIdentifier>{58df5e44-e027-49a9-ad25-d1c4bc04a7fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Util Files">
+      <UniqueIdentifier>{ed805540-bfbc-42b8-b974-984abd3cb120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Util Files\Protect">
+      <UniqueIdentifier>{0cd72ea6-ad7a-430b-b7cb-3e998945edd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Util Files\CRC">
+      <UniqueIdentifier>{8301b8c2-4a89-4682-ba1f-b510fa47f1c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs Biel">
+      <UniqueIdentifier>{b54ae0d3-4fe7-4291-8e94-aabe56bd26bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs Biel\MathLib">
+      <UniqueIdentifier>{cdd68c53-39ae-407f-8a38-9a798055f0a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\RightClick">
+      <UniqueIdentifier>{4f62617f-681d-418b-b5ab-3ea91c7980aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patente">
+      <UniqueIdentifier>{5916ee4b-74cf-40cf-841e-47ee23585469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patente\Interface">
+      <UniqueIdentifier>{6f4cf906-3085-445f-8ea1-14de6ebd11d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Interface 97d">
+      <UniqueIdentifier>{3e5b8e22-115f-4918-8e85-328d2a291db2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patente\DrawUserInfo">
+      <UniqueIdentifier>{22a8715d-5b2d-4dc3-89d9-fa155712a741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Utilitários">
+      <UniqueIdentifier>{bbd906be-7534-491e-b1a4-7fb39d797715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\StdAfx">
+      <UniqueIdentifier>{f8a8cb42-0624-414d-8e8f-b01d3569b59e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Offsets">
+      <UniqueIdentifier>{33a2bc27-3512-4696-b9f7-2940cf9d3594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Encode">
+      <UniqueIdentifier>{64609708-327f-4244-9b60-706742def823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Encode\ReadScript">
+      <UniqueIdentifier>{7a179098-e9d7-493f-b4f1-e4ee5911518d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Functions">
+      <UniqueIdentifier>{7c142784-b7cf-4187-81e3-181b57596cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\DllMain">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Biblioteca">
+      <UniqueIdentifier>{b209a5ac-c962-420a-b674-2d496f135186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs Biel\GlowManager">
+      <UniqueIdentifier>{df677531-65d4-4dbd-80d0-5a044269c4c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Minimizer">
+      <UniqueIdentifier>{9ac2f950-8962-446f-bc44-6b03684a344a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Minimizer\TrayMode">
+      <UniqueIdentifier>{3a333afa-5c05-4e4b-8486-6fd822668a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Resource Files">
+      <UniqueIdentifier>{6c9de1b5-e00a-4254-8316-f32c1bc69a6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Tokenizer">
+      <UniqueIdentifier>{167f4633-eb4a-4141-aa61-964b589e185d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Main\Minimizer\Window">
+      <UniqueIdentifier>{a9b973dd-2c41-48cf-bb08-e353d390ec55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\MiniMap">
+      <UniqueIdentifier>{4cdc11d0-d08c-4622-bbe7-baa846d368ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs Biel\Efeitos">
+      <UniqueIdentifier>{ea425319-cc03-4ca1-ba45-ebca5eba56ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs Biel\Models">
+      <UniqueIdentifier>{9a3ca782-2a83-46be-a6a0-2b281dd06b5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs Biel\Structs">
+      <UniqueIdentifier>{c07328c4-222a-4043-950a-a507abe101cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs Biel\PetsManager">
+      <UniqueIdentifier>{83d068f7-0e31-4f22-8ef2-4fcf961c196b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\ItemView">
+      <UniqueIdentifier>{c2662150-6b06-41b9-8214-4fdfd0c824f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu">
+      <UniqueIdentifier>{0a0e1079-16af-41b6-83b0-059d2f3d2313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\PlayerSystem">
+      <UniqueIdentifier>{4c2f2e95-425c-4413-bc94-93b97c2165ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\SelectChar">
+      <UniqueIdentifier>{06e4723a-b262-4a54-bf94-8b3999fdeda2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\99z">
+      <UniqueIdentifier>{9329f978-aff4-4b49-a813-4d56d760325b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\ItemSetOption">
+      <UniqueIdentifier>{252ea490-0b1f-4f5c-b892-ba9b530fc492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items">
+      <UniqueIdentifier>{9437030f-3305-4091-9766-c73caab64cb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomItem">
+      <UniqueIdentifier>{77dccf1e-d319-4047-81b6-3e55538cb6c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\ItemManager">
+      <UniqueIdentifier>{450674d9-5579-4157-ae4b-fda5bac3a03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomJewel">
+      <UniqueIdentifier>{b9670870-56b5-4799-959f-999bc5b6707a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomWing">
+      <UniqueIdentifier>{2e194bb6-0643-4bf6-8111-01e76edc3063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\New">
+      <UniqueIdentifier>{d35246dc-9a20-4b77-8dbd-bddb67e38e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Texture">
+      <UniqueIdentifier>{8059592c-08ca-4659-8778-995799f3e3e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Model">
+      <UniqueIdentifier>{80be6d70-f1d1-43d3-bb5c-cb22d1d94ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings">
+      <UniqueIdentifier>{77ccd3e9-5501-422f-bfc2-44e67e0f6d50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\Wing">
+      <UniqueIdentifier>{77d25f56-1147-454f-9101-ebd2243c58b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\WingManager">
+      <UniqueIdentifier>{aa017bb5-88a5-4dcd-95dc-4707cb9e2057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\MakePreviewCharSet">
+      <UniqueIdentifier>{615dcf90-fa94-4603-93d8-a77720efeb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\ItemDescription">
+      <UniqueIdentifier>{ea2de1a2-5ceb-4cec-be8e-398156e8ca4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomBow">
+      <UniqueIdentifier>{2973e1c0-bfb7-4a1b-9aee-e7d2f221f44c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Customs\Customs MuEmu\Items\Bow">
+      <UniqueIdentifier>{67f48872-4dd6-4d26-be23-d11b351244e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Functions.cpp">
+      <Filter>[S1] GBTeam :: Main\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Janela.cpp">
+      <Filter>[S1] GBTeam :: Customs\Janela</Filter>
+    </ClCompile>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>[S1] GBTeam :: Main\DllMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Principal.cpp">
+      <Filter>[S1] GBTeam :: Main\Principal</Filter>
+    </ClCompile>
+    <ClCompile Include="Visual.cpp">
+      <Filter>[S1] GBTeam :: Customs\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol.cpp">
+      <Filter>[S1] GBTeam :: Customs\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>[S1] GBTeam :: Customs\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>[S1] GBTeam :: Customs\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="HPBar.cpp">
+      <Filter>[S1] GBTeam :: Customs\HPBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Smoke.cpp">
+      <Filter>[S1] GBTeam :: Customs\Smoke</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface2.cpp">
+      <Filter>[S1] GBTeam :: Customs\Interface 97d</Filter>
+    </ClCompile>
+    <ClCompile Include="Wings.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\Wing</Filter>
+    </ClCompile>
+    <ClCompile Include="Features99z.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\99z</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemDescription.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\ItemDescription</Filter>
+    </ClCompile>
+    <ClCompile Include="Bow.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\Bow</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomBow.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomBow</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomItem.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomItem</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomJewel.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomJewel</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomWing.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomWing</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManager.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\ItemManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="MakePreviewCharSet.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\MakePreviewCharSet</Filter>
+    </ClCompile>
+    <ClCompile Include="WingManager.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\WingManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemSetOption.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\ItemSetOption</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSystem.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\PlayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectChar.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\SelectChar</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemView.cpp">
+      <Filter>[S1] GBTeam :: Customs\ItemView</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniMap.cpp">
+      <Filter>[S1] GBTeam :: Customs\MiniMap</Filter>
+    </ClCompile>
+    <ClCompile Include="RightClick.cpp">
+      <Filter>[S1] GBTeam :: Customs\RightClick</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>[S1] GBTeam :: Main\Biblioteca</Filter>
+    </ClCompile>
+    <ClCompile Include="Encode.cpp">
+      <Filter>[S1] GBTeam :: Main\Encode</Filter>
+    </ClCompile>
+    <ClCompile Include="TrayMode.cpp">
+      <Filter>[S1] GBTeam :: Main\Minimizer\TrayMode</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>[S1] GBTeam :: Main\Minimizer\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="CRC.cpp">
+      <Filter>[S1] GBTeam :: Util Files\CRC</Filter>
+    </ClCompile>
+    <ClCompile Include="Protect.cpp">
+      <Filter>[S1] GBTeam :: Util Files\Protect</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawUserInfo.cpp">
+      <Filter>Patente\DrawUserInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface.cpp">
+      <Filter>Patente\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Effects.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\Efeitos</Filter>
+    </ClCompile>
+    <ClCompile Include="GlowManager.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\GlowManager</Filter>
+    </ClCompile>
+    <ClCompile Include="MathLib.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\MathLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Models.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="PetsManager.cpp">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\PetsManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Functions.h">
+      <Filter>[S1] GBTeam :: Main\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Janela.h">
+      <Filter>[S1] GBTeam :: Customs\Janela</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>[S1] GBTeam :: Main\Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>[S1] GBTeam :: Main\StdAfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Principal.h">
+      <Filter>[S1] GBTeam :: Main\Principal</Filter>
+    </ClInclude>
+    <ClInclude Include="detours.h">
+      <Filter>[S1] GBTeam :: Main\Utilitários</Filter>
+    </ClInclude>
+    <ClInclude Include="Visual.h">
+      <Filter>[S1] GBTeam :: Customs\Visual</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets.h">
+      <Filter>[S1] GBTeam :: Main\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol.h">
+      <Filter>[S1] GBTeam :: Customs\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokenizer.h">
+      <Filter>[S1] GBTeam :: Customs\Tokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>[S1] GBTeam :: Customs\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>[S1] GBTeam :: Customs\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="HPBar.h">
+      <Filter>[S1] GBTeam :: Customs\HPBar</Filter>
+    </ClInclude>
+    <ClInclude Include="Smoke.h">
+      <Filter>[S1] GBTeam :: Customs\Smoke</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface2.h">
+      <Filter>[S1] GBTeam :: Customs\Interface 97d</Filter>
+    </ClInclude>
+    <ClInclude Include="Wings.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\Wing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\..\New%27s\GBTeam Emulador\Files Seasson 1\Seasson 1 GBTeam\Soucer\GBTeam - Main_EX001\Main\resource.h">
+      <Filter>[S1] GBTeam :: Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Features99z.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\99z</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemDescription.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\ItemDescription</Filter>
+    </ClInclude>
+    <ClInclude Include="Bow.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\Bow</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomBow.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomBow</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomItem.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomItem</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomJewel.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomJewel</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomWing.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\CustomWing</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManager.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\ItemManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MakePreviewCharSet.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\MakePreviewCharSet</Filter>
+    </ClInclude>
+    <ClInclude Include="WingManager.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\Items\New\Wings\WingManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemSetOption.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\ItemSetOption</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSystem.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\PlayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectChar.h">
+      <Filter>[S1] GBTeam :: Customs\Customs MuEmu\SelectChar</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemView.h">
+      <Filter>[S1] GBTeam :: Customs\ItemView</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniMap.h">
+      <Filter>[S1] GBTeam :: Customs\MiniMap</Filter>
+    </ClInclude>
+    <ClInclude Include="RightClick.h">
+      <Filter>[S1] GBTeam :: Customs\RightClick</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>[S1] GBTeam :: Main\Biblioteca</Filter>
+    </ClInclude>
+    <ClInclude Include="Encode.h">
+      <Filter>[S1] GBTeam :: Main\Encode</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadScript.h">
+      <Filter>[S1] GBTeam :: Main\Encode\ReadScript</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayMode.h">
+      <Filter>[S1] GBTeam :: Main\Minimizer\TrayMode</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>[S1] GBTeam :: Main\Minimizer\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="CRC.h">
+      <Filter>[S1] GBTeam :: Util Files\CRC</Filter>
+    </ClInclude>
+    <ClInclude Include="Protect.h">
+      <Filter>[S1] GBTeam :: Util Files\Protect</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawUserInfo.h">
+      <Filter>Patente\DrawUserInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface.h">
+      <Filter>Patente\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Effects.h">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\Efeitos</Filter>
+    </ClInclude>
+    <ClInclude Include="GlowManager.h">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\GlowManager</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib.h">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Models.h">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="PetsManager.h">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\PetsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
+      <Filter>[S1] GBTeam :: Customs\Customs Biel\Structs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\New%27s\GBTeam Emulador\Files Seasson 1\Seasson 1 GBTeam\Soucer\GBTeam - Main_EX001\Main\Client.ico">
+      <Filter>[S1] GBTeam :: Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Main.rc">
+      <Filter>[S1] GBTeam :: Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

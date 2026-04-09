@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="[S1] GBTeam :: GetMainInfo">
+      <UniqueIdentifier>{b46283c4-e03f-43d9-9d14-f7d01b680766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\StdAfx">
+      <UniqueIdentifier>{60158ea6-75a4-4f3f-a849-c91242ba1f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\Principal">
+      <UniqueIdentifier>{3b8bd688-2523-4f3c-87e2-2aecabcac83b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Resource">
+      <UniqueIdentifier>{9a984134-f6ae-42a1-8d9d-9ef98482d0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Util Files">
+      <UniqueIdentifier>{8761e4e7-4857-4ce0-9152-4cf1744ebaf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Util Files\CRC">
+      <UniqueIdentifier>{9f8b112e-baba-440e-9fc7-8c2b690f18f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Util Files\Themida">
+      <UniqueIdentifier>{8060367b-c5ea-4020-8f98-2a12df728fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: Util Files\MemScript">
+      <UniqueIdentifier>{776a0a62-5bbf-46a3-bb31-c09d585b5b95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\Customs">
+      <UniqueIdentifier>{c0db70db-6098-4d7d-923a-c11409142607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\Customs\ItemDescription">
+      <UniqueIdentifier>{be9a0a89-844d-40d2-8fa0-fe5307d5a536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\Customs\SmokeEffect">
+      <UniqueIdentifier>{40eb03ec-b541-4295-bf6e-914fcf27aea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\Customs\CustomItem">
+      <UniqueIdentifier>{860c4e6e-a895-4ad6-a284-2a2d796450ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\Customs\CustomJewel">
+      <UniqueIdentifier>{86dddda8-27de-48a7-a5e7-e020b3f00d8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\Customs\CustomWing">
+      <UniqueIdentifier>{3d22398b-0bf5-4693-b5ce-cc85bd7bbe0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[S1] GBTeam :: GetMainInfo\Customs\CustomBow">
+      <UniqueIdentifier>{81da7020-cd14-47c5-8d63-075cd59c0b8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>[S1] GBTeam :: GetMainInfo\StdAfx</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomBow.h">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\CustomBow</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomItem.h">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\CustomItem</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomJewel.h">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\CustomJewel</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomWing.h">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\CustomWing</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemDescription.h">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\ItemDescription</Filter>
+    </ClInclude>
+    <ClInclude Include="SmokeEffect.h">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\SmokeEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>[S1] GBTeam :: Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>[S1] GBTeam :: Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="CCRC32.h">
+      <Filter>[S1] GBTeam :: Util Files\CRC</Filter>
+    </ClInclude>
+    <ClInclude Include="MemScript.h">
+      <Filter>[S1] GBTeam :: Util Files\MemScript</Filter>
+    </ClInclude>
+    <ClInclude Include="ThemidaSDK.h">
+      <Filter>[S1] GBTeam :: Util Files\Themida</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>[S1] GBTeam :: GetMainInfo\StdAfx</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomBow.cpp">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\CustomBow</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomItem.cpp">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\CustomItem</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomJewel.cpp">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\CustomJewel</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomWing.cpp">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\CustomWing</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemDescription.cpp">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\ItemDescription</Filter>
+    </ClCompile>
+    <ClCompile Include="SmokeEffect.cpp">
+      <Filter>[S1] GBTeam :: GetMainInfo\Customs\SmokeEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>[S1] GBTeam :: GetMainInfo\Principal</Filter>
+    </ClCompile>
+    <ClCompile Include="CCRC32.cpp">
+      <Filter>[S1] GBTeam :: Util Files\CRC</Filter>
+    </ClCompile>
+    <ClCompile Include="MemScript.cpp">
+      <Filter>[S1] GBTeam :: Util Files\MemScript</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GetMainInfo.rc">
+      <Filter>[S1] GBTeam :: Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
