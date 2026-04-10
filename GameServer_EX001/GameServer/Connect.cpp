@@ -4,6 +4,46 @@ void cConnect::PlayerConnect(int aIndex)
 {
 	gObj[aIndex].Custom->VipCount = Manager.VipCount(gObj[aIndex].AccountID);
 
+	// Verifica expiração do VIP ao logar
+	if (gObj[aIndex].Custom->VipCount > 0)
+	{
+		char vipExpire[20] = { 0 };
+		char szQuery[256];
+
+		wsprintf(szQuery, "SELECT dateend FROM MEMB_INFO WHERE memb___id='%s'", gObj[aIndex].AccountID);
+
+		if (Manager.Exec(szQuery))
+		{
+			if (Manager.Fetch() != SQL_NO_DATA)
+			{
+				Manager.GetStr("dateend", vipExpire);
+			}
+
+			Manager.Clear();
+		}
+
+		if (vipExpire[0] != 0)
+		{
+			SYSTEMTIME st;
+			GetLocalTime(&st);
+
+			int year = 0, month = 0, day = 0;
+			sscanf(vipExpire, "%d-%d-%d", &year, &month, &day);
+
+			bool expired = false;
+
+			if (year < st.wYear) expired = true;
+			else if (year == st.wYear && month < st.wMonth) expired = true;
+			else if (year == st.wYear && month == st.wMonth && day < st.wDay) expired = true;
+
+			if (expired)
+			{
+				Manager.ExecFormat("UPDATE MEMB_INFO SET Vip = 0 WHERE memb___id='%s'", gObj[aIndex].AccountID);
+				gObj[aIndex].Custom->VipCount = 0;
+			}
+		}
+	}
+
 	gObj[aIndex].Custom->ResetCount = Manager.ResetCount(gObj[aIndex].Name);
 
 	Manager.JewelsCount(aIndex, gObj[aIndex].AccountID);

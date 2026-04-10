@@ -168,9 +168,83 @@ bool Commands::Management(PMSG_CHATDATA* lpMsg, int aIndex)
 
 	if (!_stricmp((const char*)(lpMsg->chatmsg), "/info"))
 	{
-		//Function.MsgOutput(aIndex, 1, "Resets: %d || Master Reset: %d", gObj[aIndex].Custom->ResetCount, gObj[aIndex].Custom->MasterCount);
-		Function.MsgOutput(aIndex, 1, "Saldo Cash : %d", gObj[aIndex].m_Cash);
-		Function.MsgOutput(aIndex, 1, "Saldo Golds : %d", gObj[aIndex].m_Gold);
+		char vipExpire[20] = { 0 };
+		int vipLevel = 0;
+		const char* vipName = "Free";
+		bool expired = false;
+
+		char szQuery[256];
+		wsprintf(szQuery, "SELECT Vip, dateend FROM MEMB_INFO WHERE memb___id='%s'", gObj[aIndex].AccountID);
+
+		if (Manager.Exec(szQuery))
+		{
+			if (Manager.Fetch() != SQL_NO_DATA)
+			{
+				vipLevel = Manager.GetInt("Vip");
+				Manager.GetStr("dateend", vipExpire);
+			}
+
+			Manager.Clear();
+		}
+
+		if (vipLevel > 0 && vipExpire[0] != 0)
+		{
+			SYSTEMTIME st;
+			GetLocalTime(&st);
+
+			int year = 0, month = 0, day = 0;
+			sscanf(vipExpire, "%d-%d-%d", &year, &month, &day);
+
+			if (year < st.wYear) expired = true;
+			else if (year == st.wYear && month < st.wMonth) expired = true;
+			else if (year == st.wYear && month == st.wMonth && day < st.wDay) expired = true;
+
+			if (expired)
+			{
+				Manager.ExecFormat("UPDATE MEMB_INFO SET Vip = 0 WHERE memb___id='%s'", gObj[aIndex].AccountID);
+
+				vipLevel = 0;
+				gObj[aIndex].Custom->VipCount = 0;
+				vipExpire[0] = 0;
+			}
+		}
+
+		switch (vipLevel)
+		{
+		case 0: vipName = "Free"; break;
+		case 1: vipName = "Vip Bronze"; break;
+		case 2: vipName = "Vip Prata"; break;
+		case 3: vipName = "Vip Ouro"; break;
+		default: vipName = "Free"; break;
+		}
+
+		Function.MsgOutput(aIndex, 1, "======================");
+		Function.MsgOutput(aIndex, 1, "Resets: %d | MResets: %d",
+			gObj[aIndex].Custom->ResetCount,
+			gObj[aIndex].Custom->MasterCount);
+
+		Function.MsgOutput(aIndex, 1, "VIP: %s", vipName);
+
+		if (vipLevel > 0 && vipExpire[0] != 0)
+		{
+			Function.MsgOutput(aIndex, 1, "Expira em: %s", vipExpire);
+		}
+
+		if (expired)
+		{
+			Function.MsgOutput(aIndex, 1, "Status VIP: Expirado");
+		}
+		else if (vipLevel > 0)
+		{
+			Function.MsgOutput(aIndex, 1, "Status VIP: Ativo");
+		}
+
+		Function.MsgOutput(aIndex, 1, "Cash: %d | Gold: %d",
+			gObj[aIndex].m_Cash,
+			gObj[aIndex].m_Gold);
+
+		Function.MsgOutput(aIndex, 1, "======================");
+
 		return true;
 	}
 
