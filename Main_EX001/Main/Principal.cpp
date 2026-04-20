@@ -1,4 +1,78 @@
 #include "StdAfx.h"
+#include <mmsystem.h>
+#include <stdio.h>
+
+#pragma comment(lib, "winmm.lib")
+
+static int g_FPSLimit = 120; // 60 / 75 / 100 / 120
+
+int g_CurrentFPS = 0;
+int g_FrameCounter = 0;
+DWORD g_FPSLastTick = 0;
+char g_FPSString[32] = "FPS: 0";
+
+void LimitFrameRate()
+{
+	static bool Init = false;
+	static LARGE_INTEGER Frequency;
+	static LARGE_INTEGER Last;
+
+	if (g_FPSLimit <= 0)
+	{
+		return;
+	}
+
+	if (Init == false)
+	{
+		QueryPerformanceFrequency(&Frequency);
+		QueryPerformanceCounter(&Last);
+		timeBeginPeriod(1);
+
+		g_FPSLastTick = GetTickCount();
+		Init = true;
+		return;
+	}
+
+	LONGLONG Target = (Frequency.QuadPart / g_FPSLimit);
+
+	while (true)
+	{
+		LARGE_INTEGER Now;
+		QueryPerformanceCounter(&Now);
+
+		LONGLONG Elapsed = (Now.QuadPart - Last.QuadPart);
+
+		if (Elapsed >= Target)
+		{
+			Last = Now;
+			break;
+		}
+
+		DWORD WaitMs = (DWORD)(((Target - Elapsed) * 1000) / Frequency.QuadPart);
+
+		if (WaitMs > 1)
+		{
+			Sleep(1);
+		}
+		else
+		{
+			SwitchToThread();
+		}
+	}
+
+	g_FrameCounter++;
+
+	DWORD Tick = GetTickCount();
+
+	if ((Tick - g_FPSLastTick) >= 1000)
+	{
+		g_CurrentFPS = g_FrameCounter;
+		g_FrameCounter = 0;
+		g_FPSLastTick = Tick;
+
+		wsprintf(g_FPSString, "FPS: %d", g_CurrentFPS);
+	}
+}
 
 void Initialize()
 {
@@ -30,15 +104,15 @@ void Initialize()
 	// IpPort
 	SetWord(0x006C41BC, (gProtect.m_Data.IpAddressPort)); // IpAddressPort
 
-	//  Window
+														  //  Window
 
 	*(DWORD*)(0x4B375A + 1) = (DWORD)(gProtect.m_Data.WindowName);//4B375A
-	// - Screenshots.
-	//CreateDirectory("ScreenShot", NULL);
-	//*(DWORD*)(0x00628B89, (DWORD)gProtect.m_Data.ScreenShotPath); //Screenshot
+																  // - Screenshots.
+																  //CreateDirectory("ScreenShot", NULL);
+																  //*(DWORD*)(0x00628B89, (DWORD)gProtect.m_Data.ScreenShotPath); //Screenshot
 	SetDword(0x00628B89, (DWORD)gProtect.m_Data.ScreenShotPath); //Screenshot
 
-	// - Acentuação.
+																 // - Acentuação.
 
 	*(BYTE*)(0x6B6654) = 0xA0;
 
@@ -50,35 +124,35 @@ void Initialize()
 
 	// - Select char.
 	*(DWORD*)(0x62590A) = (DWORD)(&"");
-    *(DWORD*)(0x625918) = (DWORD)(&"");
-    *(DWORD*)(0x62593C) = (DWORD)(&"");
-    *(DWORD*)(0x625957) = (DWORD)(&"");
-    *(DWORD*)(0x625964) = (DWORD)(&"");
-    *(DWORD*)(0x625988) = (DWORD)(&"");
-    *(DWORD*)(0x6259A3) = (DWORD)(&"");
-    *(DWORD*)(0x6259B0) = (DWORD)(&"");
-    *(DWORD*)(0x6259D4) = (DWORD)(&"");
+	*(DWORD*)(0x625918) = (DWORD)(&"");
+	*(DWORD*)(0x62593C) = (DWORD)(&"");
+	*(DWORD*)(0x625957) = (DWORD)(&"");
+	*(DWORD*)(0x625964) = (DWORD)(&"");
+	*(DWORD*)(0x625988) = (DWORD)(&"");
+	*(DWORD*)(0x6259A3) = (DWORD)(&"");
+	*(DWORD*)(0x6259B0) = (DWORD)(&"");
+	*(DWORD*)(0x6259D4) = (DWORD)(&"");
 
-    // - Serverlist.
+	// - Serverlist.
 
-    *(DWORD*)(0x61F3DA) = 0xFF;
-    *(DWORD*)(0x61F3E0) = 0xFF;
-    *(DWORD*)(0x61F431) = 0x120;
-    *(BYTE*)(0x61F463)  = 0x4C;
-    *(DWORD*)(0x61F7E0) = 0xFC;
-    *(DWORD*)(0x61F814) = 0x16D;
-    *(DWORD*)(0x61F81F) = 0x1F3;
-    *(DWORD*)(0x61FE1D) = 0xFF;
-    *(DWORD*)(0x61FE24) = 0xFF;
-    *(DWORD*)(0x61FE8F) = 0x118;
-    *(DWORD*)(0x61FE9E) = 0x127;
-    *(DWORD*)(0x61FEC7) = 0x127;
-    *(DWORD*)(0x61FE8F) = 0x11D;
-    *(DWORD*)(0x61FF12) = 0x3F700000;
-    *(DWORD*)(0x6201B7) = 0x3F700000;
-    *(DWORD*)(0x6201D6) = 0x43B68000;
-    *(DWORD*)(0x620251) = 0x1B0;
-    *(float*)(0x6A9788) = 383.0f;
+	*(DWORD*)(0x61F3DA) = 0xFF;
+	*(DWORD*)(0x61F3E0) = 0xFF;
+	*(DWORD*)(0x61F431) = 0x120;
+	*(BYTE*)(0x61F463) = 0x4C;
+	*(DWORD*)(0x61F7E0) = 0xFC;
+	*(DWORD*)(0x61F814) = 0x16D;
+	*(DWORD*)(0x61F81F) = 0x1F3;
+	*(DWORD*)(0x61FE1D) = 0xFF;
+	*(DWORD*)(0x61FE24) = 0xFF;
+	*(DWORD*)(0x61FE8F) = 0x118;
+	*(DWORD*)(0x61FE9E) = 0x127;
+	*(DWORD*)(0x61FEC7) = 0x127;
+	*(DWORD*)(0x61FE8F) = 0x11D;
+	*(DWORD*)(0x61FF12) = 0x3F700000;
+	*(DWORD*)(0x6201B7) = 0x3F700000;
+	*(DWORD*)(0x6201D6) = 0x43B68000;
+	*(DWORD*)(0x620251) = 0x1B0;
+	*(float*)(0x6A9788) = 383.0f;
 
 	// - Modo Janela.
 
@@ -147,7 +221,7 @@ void Initialize()
 	*(BYTE*)(0x42FB86) = 0x90;
 	*(BYTE*)(0x42FB87) = 0x90;
 
-    // - HP Bar.
+	// - HP Bar.
 
 	SetNop(0x5AAB8D, 5);
 	HookCall(0x596CEA, cHPBar::Draw);
@@ -177,29 +251,28 @@ void Initialize()
 
 	*(BYTE*)(0x4519F8) = 0x02;
 
-//==========================================================//
-// # Click do Botão direito
-//==========================================================//
+	//==========================================================//
+	// # Click do Botão direito
+	//==========================================================//
 
 	HookCall(0x005B798F, CheckClick);
 	HookCall(0x005B7A08, CheckClick);
 	HookCall(0x005B79B4, ItemPosicion);
 
-
-//==========================================================//
-// # Itens +15 Opcionais
-//==========================================================//
+	//==========================================================//
+	// # Itens +15 Opcionais
+	//==========================================================//
 	if (gProtect.m_Data.ItemLevel15 == 1)
 	{
 		gcItem.ItemLoad();
 	}
-	
-//==========================================================//
-// # Sistema transparência 100%
-//==========================================================//
+
+	//==========================================================//
+	// # Sistema transparência 100%
+	//==========================================================//
 	if (gProtect.m_Data.Transparencia == 1)
 	{
-	    MemorySet(0x005F9D6D, 0x90, 0x5);
+		MemorySet(0x005F9D6D, 0x90, 0x5);
 		MemorySet(0x005F9D4E, 0x90, 0x5);
 		MemorySet(0x005F9D31, 0x90, 0x5);
 		MemorySet(0x005F9C9B, 0x90, 0x5);
@@ -218,18 +291,18 @@ void Initialize()
 		SetByte(0x005F9C5C + 2, 14);
 		SetByte(0x005F9BC8 + 2, 14);
 	}
-//==========================================================//
-// # Interface 97d
-//==========================================================//
+	//==========================================================//
+	// # Interface 97d
+	//==========================================================//
 
 	if (gProtect.m_Data.InterfaceType == 1)
 	{
 		SetDword(0x006097CA + 1, (DWORD)"Interface\\Menu011_new.jpg");
 		SetDword(0x00609802 + 1, (DWORD)"Interface\\Menu013_new.jpg");
 	}
-//==========================================================//
-// # CS SKILL
-//==========================================================//
+	//==========================================================//
+	// # CS SKILL
+	//==========================================================//
 	if (gProtect.m_Data.CSSkillCheck == 1)
 	{
 		SetByte(0x005956D5 + 2, 0x00);
@@ -247,7 +320,7 @@ void Initialize()
 		SetByte(0x0059520F + 2, 0x00);
 	}
 	//==========================================================//
-	// Character dragging - ao atacar não deslizar 
+	// Character dragging - ao atacar não deslizar
 	//==========================================================//
 	if (gProtect.m_Data.RemoveDraggingSkill == 1)
 	{
@@ -258,12 +331,12 @@ void Initialize()
 		SetByte(0x550B29, 0x00);
 		SetByte(0x550B2A, 0x90);
 	}
-//=================================================
-// - [] [Fix] Wing level 1
-//=================================================
+	//=================================================
+	// - [] [Fix] Wing level 1
+	//=================================================
 	/*(BYTE*)(0x005A237B + 3) = 0x00;		// [#] - Wings lvl 1 Full
 	*(BYTE*)(0x005A393E + 3) = 0x00;		// [#] - deixa a cor das wings level 1 normal
-	*(BYTE*)(0x00541A9C + 3) = 0x80;*/		// [#] - retira o nome excellente 
+	*(BYTE*)(0x00541A9C + 3) = 0x80;*/		// [#] - retira o nome excellente
 }
 
 __declspec(naked) void Optimize()
@@ -272,25 +345,26 @@ __declspec(naked) void Optimize()
 
 	__asm
 	{
-		PUSH 1;
-		CALL DWORD PTR DS : [0x6A7148];
-		CALL DWORD PTR DS : [0x6A7144];
-		JMP Return;
+		CALL LimitFrameRate
+		PUSH 1
+		CALL DWORD PTR DS : [0x6A7148]
+		CALL DWORD PTR DS : [0x6A7144]
+		JMP Return
 	}
 }
 
 HWND            Window;
-HHOOK           m_Mouse         = NULL;
-HHOOK           m_Keyboard1     = NULL;
-HHOOK           m_Keyboard2     = NULL;
-HMODULE			m_Glow			= NULL;
-BYTE            MouseState      = NULL;
-int             MouseX          = NULL;
-int             MouseY          = NULL;
-bool            MoveCamera      = false;
-bool            AutoClick[3]    = { false, false, false };
-bool            Monster[2]      = { false, false };
-bool            Active[3]       = { false, false, false };
+HHOOK           m_Mouse = NULL;
+HHOOK           m_Keyboard1 = NULL;
+HHOOK           m_Keyboard2 = NULL;
+HMODULE			m_Glow = NULL;
+BYTE            MouseState = NULL;
+int             MouseX = NULL;
+int             MouseY = NULL;
+bool            MoveCamera = false;
+bool            AutoClick[3] = { false, false, false };
+bool            Monster[2] = { false, false };
+bool            Active[3] = { false, false, false };
 
 LRESULT CALLBACK KeyboardProc(int Code, WPARAM wParam, LPARAM lParam)
 {
@@ -367,10 +441,10 @@ LRESULT CALLBACK KeyboardProc(int Code, WPARAM wParam, LPARAM lParam)
 				}
 			}
 		}
-	
 	}
+
 	switch (wParam)
-		{
+	{
 	case VK_F9:
 	{
 		if (GetForegroundWindow() == pGameWindow)

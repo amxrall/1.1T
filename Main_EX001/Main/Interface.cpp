@@ -9,6 +9,8 @@ sTime s_Time;
 
 CInterface gInterface;
 
+extern char g_FPSString[32];
+
 CInterface::CInterface()
 {
 	this->ExToolTipShow = false;
@@ -20,6 +22,7 @@ void CInterface::Load()
 
 	SetHook((LPVOID)this->Work, (LPVOID)0x00596E7F, ASM::CALL);
 }
+
 #define UnknownFunc3 ((bool(__cdecl*)(char Arg1)) 0x0060CB90)
 
 void CInterface::Work()
@@ -36,16 +39,15 @@ void CInterface::Work()
 
 void CInterface::CordRun()
 {
-		/*char szBuffer[256] = {0};
-		// ---
-		pSetBlend(true);
-		// ---
-		sprintf(szBuffer, "Cord X : %d | Cord Y : %d", pCursorX, pCursorY);
-		// ---
-		pDrawText(0, 0, szBuffer);*/
+	/*char szBuffer[256] = {0};
+	// ---
+	pSetBlend(true);
+	// ---
+	sprintf(szBuffer, "Cord X : %d | Cord Y : %d", pCursorX, pCursorY);
+	// ---
+	pDrawText(0, 0, szBuffer);*/
 
 	float StartX = (1 / 1) - (1 / 1);
-
 
 	SYSTEMTIME t = { NULL };
 	// ----
@@ -60,6 +62,9 @@ void CInterface::CordRun()
 		MU_DrawToolTip(39, 3, szTemp);
 	}
 
+	// FPS no canto superior direito
+	MU_DrawToolTip((int)(gWindow.iSizeX - 80), 3, g_FPSString);
+
 	/*float StartX111 = (100 / 10) - (1 / 1);
 	char szTemp2[256] = { NULL };
 	sprintf(szTemp2, "www.stylemu.net");
@@ -68,15 +73,12 @@ void CInterface::CordRun()
 	// ---
 	MU_LoadAlpha("Customs\\Interface\\Patente2.tga", eTest, 0x2600, 0x2900, 0, 1);
 	//pDrawGUI(0x14, StartX + 370, + 60, 70.0, 70.0, 0, 0, 0.8000, 0.7000, 1, 1);
-
 }
-
 
 void CInterface::DrawGUI(int ObjectId, float X, float Y, float Width, float Height, float ScaleX, float ScaleY)
 {
 	pDrawGUI(ObjectId, X, Y, Width, Height, 0, 0, ScaleX, ScaleY, 1, 1);
 }
-
 
 void CInterface::BindObject(short MonsterID, DWORD ModelID, float Width, float Height, float X, float Y)
 {
@@ -100,7 +102,7 @@ void CInterface::LoadImage(int Type, char * Folder, int ImageID)
 	case 0:
 	{
 		pLoadImage(Folder, ImageID, 0x2600, 0x2900, 0, 1); // -> JPG
-		//pLoadImage("Customs\\Interface\\Patente2.tga", eTest, 0x2601, 0x2901, 0, 1);
+														   //pLoadImage("Customs\\Interface\\Patente2.tga", eTest, 0x2601, 0x2901, 0, 1);
 	}
 	break;
 	case 1:
@@ -149,7 +151,6 @@ bool CGetTime()
 	// ----
 	if (s_Time.Minute == 60)
 	{
-
 		// ----
 		return true;
 	}
