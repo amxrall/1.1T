@@ -1,79 +1,53 @@
 #include "stdafx.h"
 #include "resource.h"
 #include "TrayMode.h"
-#include <Shellapi.h>
 
 CTrayMode gTrayMode;
 
 CTrayMode::CTrayMode()
 {
-
+	this->m_TrayIcon = 0;
+	this->m_MainWndProc = 0;
 }
 
 CTrayMode::~CTrayMode()
 {
-
 }
 
 void CTrayMode::Init(HINSTANCE hins)
 {
 	this->m_TrayIcon = (HICON)LoadImage(hins, MAKEINTRESOURCE(IDI_ICON1), IMAGE_ICON, GetSystemMetrics(SM_CXSMICON), GetSystemMetrics(SM_CYSMICON), LR_DEFAULTCOLOR);
 
-	this->m_MainWndProc = 0;
+	if (pGameWindow != 0 && this->m_MainWndProc == 0)
+	{
+		this->m_MainWndProc = (WNDPROC)SetWindowLongPtr(pGameWindow, GWLP_WNDPROC, (LONG_PTR)CTrayMode::TrayModeWndProc);
+	}
 }
 
 void CTrayMode::Toggle()
 {
-	if (this->GetMainWndProc() != 0)
+	if (pGameWindow == 0)
 	{
-		if (IsWindowVisible(pGameWindow) == 0)
-		{
-			ShowWindow(pGameWindow, SW_SHOW);
+		return;
+	}
 
-			this->ShowNotify(0);
-			
-		}
-		else
-		{
-			ShowWindow(pGameWindow, SW_HIDE); // SW_HIDE
-
-			this->ShowNotify(1);
-
-			this->ShowMessage(NIIF_INFO, gProtect.m_Data.WindowName, "Foi Minimizado.");
-		}
+	if (IsWindowVisible(pGameWindow) == 0)
+	{
+		ShowWindow(pGameWindow, SW_SHOW);
+		ShowWindow(pGameWindow, SW_RESTORE);
+		SetForegroundWindow(pGameWindow);
+		this->ShowNotify(false);
+	}
+	else
+	{
+		this->ShowNotify(true);
+		ShowWindow(pGameWindow, SW_HIDE);
 	}
 }
 
-void CTrayMode::ShowMessage(DWORD Type, char* Title, char* Message)
+WNDPROC CTrayMode::GetMainWndProc()
 {
-	NOTIFYICONDATA Icon = { 0 };
-
-	Icon.cbSize = sizeof(NOTIFYICONDATA);
-
-	Icon.uID = WM_TRAY_MODE_ICON;
-
-	Icon.hWnd = pGameWindow;
-
-	Icon.uFlags = NIF_ICON | NIF_MESSAGE | NIF_INFO;
-
-	Icon.hIcon = this->m_TrayIcon;
-
-	Icon.uCallbackMessage = WM_TRAY_MODE_MESSAGE;
-
-	Icon.dwInfoFlags = Type;
-
-	Icon.uTimeout = 5000;
-
-	strcpy_s(Icon.szInfo, Message);
-
-	strcpy_s(Icon.szInfoTitle, Title);
-
-	Shell_NotifyIcon(NIM_MODIFY, &Icon);
-}
-
-LONG CTrayMode::GetMainWndProc()
-{
-	return ((this->m_MainWndProc == 0) ? ((LONG)(this->m_MainWndProc = (WNDPROC)SetWindowLong(pGameWindow, GWL_WNDPROC, (LONG)CTrayMode::TrayModeWndProc))) : ((LONG)this->m_MainWndProc));
+	return this->m_MainWndProc;
 }
 
 void CTrayMode::ShowNotify(bool mode)
@@ -83,20 +57,36 @@ void CTrayMode::ShowNotify(bool mode)
 	memset(&nid, 0, sizeof(nid));
 
 	nid.cbSize = sizeof(NOTIFYICONDATA);
-
 	nid.hWnd = pGameWindow;
-
 	nid.uID = WM_TRAY_MODE_ICON;
-
 	nid.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP;
-
 	nid.uCallbackMessage = WM_TRAY_MODE_MESSAGE;
-
 	nid.hIcon = this->m_TrayIcon;
 
-	wsprintf(nid.szTip, gProtect.m_Data.WindowName);
+	strcpy_s(nid.szTip, sizeof(nid.szTip), gProtect.m_Data.WindowName);
 
-	Shell_NotifyIcon(((mode == 0) ? NIM_DELETE : NIM_ADD), &nid);
+	Shell_NotifyIcon((mode == false) ? NIM_DELETE : NIM_ADD, &nid);
+}
+
+void CTrayMode::ShowMessage(DWORD Type, char* Title, char* Message)
+{
+	NOTIFYICONDATA Icon;
+
+	memset(&Icon, 0, sizeof(Icon));
+
+	Icon.cbSize = sizeof(NOTIFYICONDATA);
+	Icon.uID = WM_TRAY_MODE_ICON;
+	Icon.hWnd = pGameWindow;
+	Icon.uFlags = NIF_ICON | NIF_MESSAGE | NIF_INFO;
+	Icon.hIcon = this->m_TrayIcon;
+	Icon.uCallbackMessage = WM_TRAY_MODE_MESSAGE;
+	Icon.dwInfoFlags = Type;
+	Icon.uTimeout = 5000;
+
+	strcpy_s(Icon.szInfo, sizeof(Icon.szInfo), Message);
+	strcpy_s(Icon.szInfoTitle, sizeof(Icon.szInfoTitle), Title);
+
+	Shell_NotifyIcon(NIM_MODIFY, &Icon);
 }
 
 LRESULT CALLBACK CTrayMode::TrayModeWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -117,16 +107,7 @@ LRESULT CALLBACK CTrayMode::TrayModeWndProc(HWND hWnd, UINT message, WPARAM wPar
 	{
 		if ((wParam & 0xFFF0) == SC_MINIMIZE)
 		{
-			ShowWindow(hWnd, SW_MINIMIZE);
-			return 0;
-		}
-	}
-	break;
-
-	case WM_SIZE:
-	{
-		if (wParam == SIZE_MINIMIZED)
-		{
+			gTrayMode.Toggle();
 			return 0;
 		}
 	}
@@ -134,36 +115,15 @@ LRESULT CALLBACK CTrayMode::TrayModeWndProc(HWND hWnd, UINT message, WPARAM wPar
 
 	case WM_CLOSE:
 	{
-		gTrayMode.Hide();
+		gTrayMode.Toggle();
 		return 0;
 	}
+	}
 
-	case WM_DESTROY:
+	if (gTrayMode.GetMainWndProc() != 0)
 	{
-		gTrayMode.DeleteTrayIcon();
-		break;
-	}
+		return CallWindowProc(gTrayMode.GetMainWndProc(), hWnd, message, wParam, lParam);
 	}
 
-	return CallWindowProc((WNDPROC)gTrayMode.GetMainWndProc(), hWnd, message, wParam, lParam);
-}
-
-void CTrayMode::Hide()
-{
-	ShowWindow(pGameWindow, SW_HIDE);
-
-	this->ShowNotify(true);
-}
-
-void CTrayMode::DeleteTrayIcon()
-{
-	NOTIFYICONDATA nid;
-
-	memset(&nid, 0, sizeof(nid));
-
-	nid.cbSize = sizeof(NOTIFYICONDATA);
-	nid.hWnd = pGameWindow;
-	nid.uID = WM_TRAY_MODE_ICON;
-
-	Shell_NotifyIcon(NIM_DELETE, &nid);
+	return DefWindowProc(hWnd, message, wParam, lParam);
 }
