@@ -1,4 +1,4 @@
-﻿  Principal.cpp
+﻿  Wings.cpp
 c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
 c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
   c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
@@ -10,5 +10,540 @@ c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning
   c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
 c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
   c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wings.cpp(594): warning C4102: 'NEXT_CHECK': unreferenced label
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wings.cpp(600): warning C4102: 'NEXT_CHECK1': unreferenced label
+  WingManager.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Window.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Visual.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  User.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  TrayMode.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Title.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Protocol.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Janela.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Functions.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\functions.cpp(99): warning C4244: 'return': conversion from 'float' to 'DWORD', possible loss of data
+  Principal.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Texture.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Smoke.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  SelectChar.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  RightClick.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Protect.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  PlayerSystem.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\playersystem.cpp(23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\amaral\documents\github\1.1t\main_ex001\main\playersystem.cpp(50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  PetsManager.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\petsmanager.cpp(12): warning C4005: 'oPreviewStruct': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\selectchar.h(10): note: see previous definition of 'oPreviewStruct'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\petsmanager.cpp(117): warning C4244: 'argument': conversion from 'DWORD' to 'WORD', possible loss of data
+c:\users\amaral\documents\github\1.1t\main_ex001\main\petsmanager.cpp(3128): warning C4081: expected 'string'; found 'user-defined string literal'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\petsmanager.cpp(3412): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\amaral\documents\github\1.1t\main_ex001\main\petsmanager.cpp(3413): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\amaral\documents\github\1.1t\main_ex001\main\petsmanager.cpp(3569): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\amaral\documents\github\1.1t\main_ex001\main\petsmanager.cpp(3570): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Models.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Model.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Generating Code...
+  Compiling...
+  MiniMap.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  MathLib.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  MakePreviewCharSet.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  ItemView.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  ItemSetOption.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  ItemManager.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  ItemDescription.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemdescription.cpp(245): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1467): note: see declaration of 'vsprintf'
+  HPBar.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  DllMain.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\dllmain.cpp(22): warning C4101: 'm_Data': unreferenced local variable
+  Camera.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Interface2.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Interface.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\interface.cpp(59): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1772): note: see declaration of 'sprintf'
+  GlowManager.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Features99z.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Encode.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Effects.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  DrawUserInfo.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\drawuserinfo.cpp(62): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\drawuserinfo.cpp(104): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\drawuserinfo.cpp(108): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\amaral\documents\github\1.1t\main_ex001\main\drawuserinfo.cpp(109): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\drawuserinfo.cpp(109): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CustomWing.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  CustomJewel.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  CustomItem.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Generating Code...
+  Compiling...
+  CustomBow.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  CRC.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Bow.cpp
+c:\users\amaral\documents\github\1.1t\main_ex001\main\readscript.h(14): warning C4091: 'static ': ignored on left of 'SMDToken' when no variable is declared
+c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(19): warning C4005: 'ITEMGET': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(37): note: see previous definition of 'ITEMGET'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\features99z.h(3): warning C4005: 'pLoadTexture': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(17): note: see previous definition of 'pLoadTexture'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(22): warning C4005: 'ITEM_BASE_MODEL': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(33): note: see previous definition of 'ITEM_BASE_MODEL'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(28): warning C4005: 'ITEM_ID': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\offsets.h(38): note: see previous definition of 'ITEM_ID'
+c:\users\amaral\documents\github\1.1t\main_ex001\main\itemmanager.h(33): warning C4005: 'pItemSetOptionAdd': macro redefinition
+  c:\users\amaral\documents\github\1.1t\main_ex001\main\wingmanager.h(24): note: see previous definition of 'pItemSetOptionAdd'
+  Generating Code...
+     Creating library C:\Users\AMARAL\Documents\GitHub\1.1T\Main_EX001\Debug\Main.lib and object C:\Users\AMARAL\Documents\GitHub\1.1T\Main_EX001\Debug\Main.exp
+Detours.lib(detours.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'Detours.lib(detours.obj)' or at 'C:\Users\AMARAL\Documents\GitHub\1.1T\Main_EX001\Debug\detours.pdb'; linking object as if no debug info
+Detours.lib(disasm.obj) : warning LNK4099: PDB 'detours.pdb' was not found with 'Detours.lib(disasm.obj)' or at 'C:\Users\AMARAL\Documents\GitHub\1.1T\Main_EX001\Debug\detours.pdb'; linking object as if no debug info
   Main.vcxproj -> C:\Users\AMARAL\Documents\GitHub\1.1T\Main_EX001\Debug\Main.dll
   Main.vcxproj -> C:\Users\AMARAL\Documents\GitHub\1.1T\Main_EX001\Debug\Main.pdb (Partial PDB)

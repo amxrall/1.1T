@@ -105,27 +105,65 @@ LRESULT CALLBACK CTrayMode::TrayModeWndProc(HWND hWnd, UINT message, WPARAM wPar
 	{
 	case WM_TRAY_MODE_MESSAGE:
 	{
-		switch (lParam)
-		{
-		case WM_LBUTTONDBLCLK:
+		if (lParam == WM_LBUTTONDBLCLK)
 		{
 			gTrayMode.Toggle();
-
-			break;
-		}
-
-		default:
-		{
-			break;
-		}
+			return 0;
 		}
 	}
+	break;
 
-	default:
+	case WM_SYSCOMMAND:
 	{
+		if ((wParam & 0xFFF0) == SC_MINIMIZE)
+		{
+			ShowWindow(hWnd, SW_MINIMIZE);
+			return 0;
+		}
+	}
+	break;
+
+	case WM_SIZE:
+	{
+		if (wParam == SIZE_MINIMIZED)
+		{
+			return 0;
+		}
+	}
+	break;
+
+	case WM_CLOSE:
+	{
+		gTrayMode.Hide();
+		return 0;
+	}
+
+	case WM_DESTROY:
+	{
+		gTrayMode.DeleteTrayIcon();
 		break;
 	}
 	}
 
 	return CallWindowProc((WNDPROC)gTrayMode.GetMainWndProc(), hWnd, message, wParam, lParam);
+}
+
+void CTrayMode::Hide()
+{
+	ShowWindow(pGameWindow, SW_HIDE);
+
+	this->ShowNotify(true);
+}
+
+void CTrayMode::DeleteTrayIcon()
+{
+	NOTIFYICONDATA nid;
+
+	memset(&nid, 0, sizeof(nid));
+
+	nid.cbSize = sizeof(NOTIFYICONDATA);
+	nid.hWnd = pGameWindow;
+	nid.uID = WM_TRAY_MODE_ICON;
+
+	Shell_NotifyIcon(NIM_DELETE, &nid);
 }

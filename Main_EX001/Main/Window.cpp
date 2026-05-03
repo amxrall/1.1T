@@ -57,16 +57,38 @@ HWND WINAPI cWindow::dtCreateWindowExA(DWORD ExStyle, LPCSTR ClassName, LPCSTR W
 {
 	if (IS_INTRESOURCE(ClassName))
 	{
-		return pCreateWindowExA(0x00000100, ClassName, WindowName, 0x16CA0000, X, Y, Width, Height, Parent, Menu, Instance, Parameter);
+		return pCreateWindowExA(ExStyle, ClassName, WindowName, Style, X, Y, Width, Height, Parent, Menu, Instance, Parameter);
 	}
 
 	if (_stricmp(ClassName, "MU") == 0)
 	{
-		int SizeX = Width, SizeY = Height, ScreenX = GetSystemMetrics(SM_CXSCREEN), ScreenY = GetSystemMetrics(SM_CYSCREEN), X2 = (ScreenX / 2) - (SizeX / 2), Y2 = (ScreenY / 2) - (SizeY / 2);
+		int SizeX = Width;
+		int SizeY = Height;
 
-		HWND Window = pCreateWindowExA(0x00000100, ClassName, WindowName, 0x16CA0000, X2, Y2, SizeX, SizeY + 28, 0, 0, Instance, Parameter);
+		int ScreenX = GetSystemMetrics(SM_CXSCREEN);
+		int ScreenY = GetSystemMetrics(SM_CYSCREEN);
 
-		SetWindowPos(Window, NULL, X2, Y2, 0, 0, SWP_NOSIZE);
+		int X2 = (ScreenX / 2) - (SizeX / 2);
+		int Y2 = (ScreenY / 2) - (SizeY / 2);
+
+		DWORD NewStyle = WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX;
+
+		HWND Window = pCreateWindowExA(
+			0,
+			ClassName,
+			WindowName,
+			NewStyle,
+			X2,
+			Y2,
+			SizeX,
+			SizeY + 28,
+			0,
+			0,
+			Instance,
+			Parameter
+		);
+
+		SetWindowPos(Window, NULL, X2, Y2, 0, 0, SWP_NOSIZE | SWP_NOZORDER);
 
 		return Window;
 	}
